@@ -12,7 +12,7 @@
 ##################################################
 
 # setting path and importing data
-setwd("C:/Users/felip/OneDrive/ProjectsGitHub/TimeSeriesProject/data")
+setwd("data")
 getwd()
 datafile <- "valeurs_mensuelles.csv"
 data <- read.csv(datafile, sep=";")
