@@ -12,9 +12,7 @@
 ##################################################
 
 # setting path and importing data
-setwd("data")
-getwd()
-datafile <- "valeurs_mensuelles.csv"
+datafile <- "TimeSeriesProject/data/valeurs_mensuelles.csv"
 data <- read.csv(datafile, sep=";")
 
 
@@ -23,9 +21,9 @@ head(data, n=10)
 
 
 # importing time series packages
-require(zoo)
-require(tseries)
-require(fUnitRoots)
+library(zoo, warn = FALSE)
+library(tseries, warn = FALSE)
+library(fUnitRoots, warn = FALSE)
 
 
 
